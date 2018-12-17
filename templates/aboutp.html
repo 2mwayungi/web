@@ -1,0 +1,690 @@
+{% load static %}
+ <!--<img src="{% static "my_app/example.jpg" %}" alt="My image"/>-->
+<html>
+    <head>
+        <title>New</title>
+        <link rel="stylesheet" href="{% static 'css/last.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    </head>
+    <style>
+        .home{
+            background-image: url("{% static 'img/last/new.jpg' %}");
+            background-position: top;
+            background-size: cover;
+            padding-top:200px;
+            padding-bottom: 90px;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        .head-text{
+            color:#fff;
+           
+                
+        }
+        .head-text h1{
+            font-size: 60px;
+            line-height: 70px;
+            letter-spacing: 0.05px;
+            padding-top: 20px;
+            font-weight: 600;
+            color:#fff;
+        }
+        .head-text p{
+            font-size: 18px;
+            line-height: 30px;
+           text-align: justify;
+        }
+        .navbar{
+            
+            margin-top: -52px;
+          
+            border-bottom: none;
+            transition: all 0.5s ease-in-out;
+           
+            
+        }
+        .navbar-nav{
+            float:right;
+            text-align: center;
+           
+            padding-top: -20px;
+           
+        }
+        .navbar-collapse ul li a{
+            color:#fff !important;
+            padding:13px;
+            font-size: 13px !important;
+            transition: all .5s ease-in-out !important;
+            letter-spacing: 1px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            background: transparent;
+            overflow: hidden;
+            margin-left: 10px;
+            margin-top: 21px;
+            font-family: sans-serif;
+            
+            
+        }
+        .navbar-collapse ul li a:hover, .navbar-collapse ul li a:focus{
+            color:deepskyblue!important;
+            background: none !important;
+            border-bottom: 1px solid deepskyblue;
+          
+           
+        }
+        .navbar-toggle{
+            color:#fff;
+            border: 1px solid #fff;
+            transition: all 0.5s ease-in;
+        }
+        .icon-bar{
+            color:#fff !important;
+            background-color:white !important;
+            
+        }
+        .navbar-inverse .navbar-collapse{
+            background-color: transparent !important;
+        }
+        .location{
+            border: 1px solid white;
+            padding: 10px 30px;
+            margin:12px;
+            
+         
+            
+        }
+        .navbar-fixed-top{
+            background-color: transparent !mportant;
+        }
+        .secondary{
+            background:rgb(0, 0,0,0.4);
+           
+        }
+          nav .navbar-brand img{
+                height: 80px;
+                margin-top: 50;
+                 
+            }
+        .hope .now{
+            
+            background-image: url("static/img/last/p5.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hope .now h1{
+            margin-top: 200px;
+            margin-bottom: 250px;
+        }
+        .board{
+            padding-top: 100px;
+        }
+        .board h3{
+            font-weight: 800;
+            margin-top: 300px;
+   
+            text-transform: uppercase;
+            text-align: center;
+            color:blue;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+        .page-footer{
+                padding-top:10px;
+                padding-bottom: 1px;
+                background-color:#000;
+            }
+            .font-weight-bold{
+                margin-top:50px;
+            }
+            .ml-lg-0{
+                padding-top: 5px;
+            }
+            .btn-floating{
+                padding-top: 70px;
+                font-size:35px;
+            }
+            .copy{
+                text-align: left;
+            }
+            footer p{
+                font-size:14px;
+                color:fff;
+            }
+            footer p a{
+                font-size:14px;
+                color:#fff;
+                text-decoration: none;
+            }
+            footer p a:hover{
+                color:teal;
+                text-decoration: none;
+            }
+            footer h6{
+                font-size: 18px;
+                color:#fff;
+                padding-bottom: 20px;
+            }
+        
+        .about h3{
+            color:blue;
+            font-size:34px;
+            margin-top:80px;
+            font-weight: 900;
+        }
+        .about p{
+            margin:30px 20%;
+            font-size:16px;
+            border-left: 3px solid midnightblue;
+       
+            padding-left:20px;
+            font-weight: 900;
+        }
+        .about ul li{
+            list-style: none;
+            margin-left:35%;
+            font-weight: 900;
+        }
+        .who-we-are{
+             background-image: url('static/img/img/bb.jpeg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: bottom;
+            padding:10px;
+              font-family: sans-serif;
+            
+        }
+        .who-we-are h3{
+      
+            color: blue;
+            font-size: 36px;
+              font-family: sans-serif;
+            font-weight: 300px;
+            padding-bottom: 20px;
+        }
+        .who-we-are p{
+            color: darkblue;
+            padding: 0 100px;
+             font-size: 20px;
+            font-weight: 300px;
+              font-family: sans-serif;
+        }
+        .vision {
+            background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url("{% static 'img/img/m.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            color:#fff;
+           
+            margin-bottom:0;
+            margin-top:-110px;
+         
+        }
+     
+        .vision h3{
+             font-size: 36px;
+            font-weight: 300;
+              font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+        .vision p{
+             font-size:20px;
+              font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+        .about-vision{
+            background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+              font-family: sans-serif;
+            padding:210px 0;
+            margin-left:-110px;
+            
+        }
+        .mission{
+            color:#fff;
+              font-family: sans-serif;
+            margin-top:-50px;
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("{% static 'img/last/read.jpg' %}");
+            background-position: center;
+            background-size: cover;
+          
+        }
+        .mission-text{
+            background: linear-gradient(to right, #31bfce 40%, #2580be 100%);
+            background-attachment: fixed;
+            
+            padding:190px 10px;
+            margin-left:-29px;
+            margin-right:-134px;
+            
+        }
+        .mission h3 {
+            font-size: 36px;
+            font-weight: 300;
+              font-family: sans-serif;
+            padding-top: -100px;
+            letter-spacing: 1px;
+        }
+        .mission p{
+            font-size:20px;
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+        .slogan{
+            margin-top:-50px;
+            color:#fff;
+              font-family: sans-serif;
+            text-align: center;
+            
+            background-image: url("{% static 'img/img/sky-31.jpg' %}");
+            background-attachment: fixed;
+            background-position:top;
+            background-size: cover;
+            background-attachment: fixed;
+            padding:135px 0;
+        }
+        .slogan h3{
+          
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            
+        }
+        .slogan .white{
+            color:white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .slogan .blue{
+            color:blue;
+            font-size: 22px;
+             font-weight: bold;
+        }
+        .slogan .green{
+            color:green !important;
+            font-size: 22px;
+             font-weight: bold;
+        }
+        .slogan p{
+            font-size:20px;
+            margin:0 30px;
+            padding: 0 90px;
+            font-family: sans-serif;
+             font-weight: 300;
+        }
+        .empty{
+            background-image: url("static/img/img/bb.jpeg");
+            background-position: center;
+            background-attachment: fixed;
+            padding: 170px 0;
+        }
+        
+        .value{
+      
+             margin-top:-240px;
+            color:#fff;
+           
+            background: url("{% static  'img/last/k2.jpg' %}");
+            background-position: left;
+            background-size: cover;
+            padding: 70px 0;
+            
+        }
+        .value p{
+            font-size:18px;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+        .value h3{
+            font-size: 36px;
+            letter-spacing: 1px;
+            font-weight: 300;
+         
+        }
+        .value-text{
+          
+             background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+            padding:120px 40px;
+            text-align: center;
+            margin-top: -200px;
+            margin-left:-10px;
+            font-size:20px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            
+            
+        }
+        .overall{
+            color:#fff;
+            
+            margin-top:-230px;
+            background: url("{% static 'img/last/disc.jpg' %}");
+            background-position: center;
+            background-size: cover;
+            padding:90px 0;
+            
+            
+        }
+        .overall h3 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-family: sans-serif;
+        }
+        .overall-text{
+            background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+            margin-top: -240px;
+            padding:100px 30px;
+            margin-left: -30px;
+            margin-right:-10px;
+        }
+        .overall p{
+            font-size:20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+        }
+    
+       
+        
+        
+            
+    </style>
+    <body>
+     <nav class="navbar navbar-fixed-top ">
+         <div class="container">
+             <div class="navbar-header">
+                 <button class="navbar-toggle" data-toggle="collapse" data-target="#navi">
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a href="" class="navbar navbar-brand"><img src="{% static 'img/last/0.png' %}" class="logo" alt=""></a>
+             </div>
+             <div class="collapse navbar-collapse" id="navi">
+             <ul class="nav navbar-nav">
+                 <li><a href="{% url 'home' %}">Home</a></li>
+                 <li><a href="/">About</a></li>
+                 <li><a href="{% url 'home' %}">Team</a></li>
+                 <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                 <li><a class="{% url 'home' %}" href="">Donate</a></li>
+             </ul>
+             </div>
+         </div>
+     </nav>
+      
+      <section class="home" id="home-header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-sm-12 head-text">
+                      <h1 class='text-center'>ABOUT US</h1>
+                     
+                  </div>
+                
+              </div>
+          </div>
+      </section>
+      <script>
+          $(window).scroll(function(){
+              
+              var top=$(window).scrollTop();
+               if (top >=60){
+                   $("nav").addClass('secondary');
+               }
+              else
+                  if ($("nav").hasClass('secondary')){
+                      $("nav").removeClass('secondary');
+                  }
+                  
+               
+              
+              
+              
+              
+              
+          })
+          
+          
+        </script>
+        <section class="who-we-are">
+         <div class="container">
+           <div class="row">
+           <div class="col-md-12">
+           <div class="we-are">
+            <h3 class="text-center"> WHO WE ARE</h3>
+            <P class="text-center">Mwanza Youth and Children Network (MYCN) is a youth led NGO. The organization was established to serve the youth and children generation living in the Tanzania mainland through different programs and project interventions.</P>
+            </div>
+        </div>
+        </div>
+        </div>
+        </section>
+            <div class="container big">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        
+        <section class="vision">
+        <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                   <div class=" about-vision">
+            <h3 class="text-center">Our Vision: </h3>
+           <p class="text-center">A prosperous Tanzania with a youth and child generation that have sustainable development.</p>
+            </div>
+               </div>
+                
+            </div>
+        </div>
+        
+           </section>
+           
+           
+            <section class="mission">
+                <div class="container">
+                    <div class="row">
+                       <div class="col-md-6">
+                           
+                       </div>
+                        <div class="col-md-6">
+                            <div class="mission-text">
+                             <h3 class="text-center">Our Mission:</h3>
+            <p class="text-center"> To inspire and facilitate youth and children to have the best means to participate and acquire their intellectual, physical, moral, cultural, and economic development for their own benefits and society in general.</p> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+           
+           
+           
+           <section class="slogan">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-12">
+                           <div class="slogan-text">
+                               <h3 class="text-center"> Our Slogan:</h3> 
+                               <p><span class="blue">HOPE!</span> <span class="white">ACTION!</span><span class="green"> CHANGE!</span> meaning that in any movement towards achieving a certain vision the most import thing to have at the beginning is <span class="blue">HOPE!</span>. <span class="blue">HOPE!</span> alone is not enough <span class="white">ACTION!</span> should be taken so as to attain the desired <span class="green"> CHANGE!</span>.</p>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+           <section class="empty">
+               
+           </section>
+           
+           <section class="value">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-6">
+                           <div class="value-text">
+                              <h3 class="text-center">Our Values:</h3>
+                               <p> Integrity and ethics, Volunteerism spirit, Commitment, Hard working, Leadership, Teamwork, Continuous improvement, Communication, Recognition, and Accountability.</p>
+
+                               
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </section>
+
+           <section class="empty">
+               
+           </section>
+
+           <section class="overall">
+               <div class="container">
+                   <div class="row">
+                       <div class="col-md-6">
+                           
+                       </div>
+                       <div class="col-md-6">
+                          <div class="overall-text">
+                               <h3 class="text-center">Overall Goal:</h3> 
+            <p class="text-center">Youth and children communities are inspired, motivated, involved and supported to enable them realize their roles so they can participate in the developmental processes.</p>
+
+                          </div>
+                           
+                       </div>
+                   </div>
+               </div>
+           </section>
+          
+          
+           
+
+ 
+
+       
+       
+       
+       
+       
+        
+        
+  
+      
+       
+             
+      <footer class="page-footer font-small  pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"> <!--<a href="" class="navbar navbar-brand"><img src="last/0.png" class="logo" alt=""></a>-->MYCN - Mwanza Youth and Children Network </h6>
+                      <p>Mwanza Youth and Children Network (MYCN) is a youth led NGO .The organization was established to serve the youth and children generation living in the Tanzania through different programs and project interventions.</p>
+                  </div>
+                  <!--/.First column-->
+      
+               
+      
+                  <!--Second column-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                      <p><a href="#!">What we do</a></p>
+                      <p><a href="#!">Programs</a></p>
+                      <p><a href="#!">About</a></p>
+                      <p><a href="#!">Blog</a></p>
+                      <p><a href="#!">Team</a></p>
+                      
+                  </div>
+                  <!--/.Second column-->
+      
+                  
+      
+                  <!--Third column-->
+                  <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Sections</h6>
+                      <p><a href="#!">News</a></p>
+                      <p><a href="#!">Become an Affiliate</a></p>
+                      <p><a href="#!">Shipping Rates</a></p>
+                      <p><a href="#!">Help</a></p>
+                  </div>
+                  <!--/.Third column-->
+      
+                
+      
+                  <!--Fourth column-->
+                  <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                      <p><i class="fa fa-home mr-3"></i> MYCN - Mwanza Youth and Children Network
+                        <br>P.O.BOX 6491
+                        Mwanza, <br>Tanzania, <br> East Africa</p>
+                      <!--<p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>-->
+                      <p><i class="fa fa-phone mr-3"></i> +255 754 016904</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 712 393669</p>    
+                      <p><i class="fa fa-phone mr-3"></i> +255 766 565257</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 784 614665</p>
+                  </div>
+                  <!--/.Fourth column-->
+      
+              </div>
+              <div class="col-md-12 col-lg-12 ml-lg-0">
+      
+                      <!--Social buttons-->
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  <!--Grid column-->
+                  <div class="col-md-12 col-lg-12">
+      
+                      <!--Copyright-->
+                      <p class="text-center text-md-left grey-text copy">© 2018 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MYCN - Mwanza Youth and 
+Children Network </strong></a></p>
+                      <!--/.Copyright-->
+      
+                  </div><br>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  
+                      <!--/.Social buttons-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+              </div>
+      
+          </div>
+      
+      </footer>
+      <!--/.Footer-->
+            
+        
+       
+                 
+                
+        <!--Footer-->
+        <!--Footer-->
+        
+      
+              
+        
+       
+    </body>
+    
+</html>

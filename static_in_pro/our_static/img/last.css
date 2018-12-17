@@ -1,0 +1,113 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    background:#f2f2f2;
+}
+
+
+.team{
+    height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin:50px auto;
+}
+
+.row{
+    width:100%;
+    position: relative;
+    
+    
+}
+
+.team .container .row h1{
+    font-weight: 800;
+    text-align: center;
+    color:blue;
+    font-size: 34px;
+    text-transform: uppercase;
+} 
+.team f.container .row p{
+    font-weight: 400;
+    color:#000;
+    font-size:14px;
+   
+    padding-left:20px;
+    text-align: center;
+}
+
+.container .row .column{
+    width:calc(25% - 20px);
+    min-height: 250px;
+    position: relative;
+    background: #fff;
+    float:left;
+    margin:20px 10px;
+    overflow: hidden;
+    
+}
+.container .row .column .imageblock{
+    position: relative
+    
+}
+.container .row .column .imageblock img{
+    width:100%;
+    transition:5s;
+    
+}
+.container .row .column:hover .imageblock img{
+    transform: scale(1.15);
+}
+.container .row .column .text{
+    
+    bottom: -120px;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    width:100%;
+   
+    box-sizing: border-box;
+    transition: .5s;
+}
+.container .row .column:hover .text{
+    bottom: 0;
+}
+.container .row .column .text h3{
+    text-align: right;
+    color:#fff;
+    font-weight: 300;
+    margin:0;
+    padding:0;
+}
+.container .row .column .text h3 span{
+    color:#981;
+    top:-6px;
+}
+.container .row .column .text ul{
+    list-style: none;
+     display: flex;
+     margin:0;
+    padding: 0;
+    
+}
+.container .row .column .text ul li a{
+   
+    padding:0 10px;
+    color:#fff;
+ 
+    
+}
+
+.container .row .column .text ul li a .fa{
+    color:#fff;
+    transition: 5s;
+}
+.container .row .column .text ul li a:hover .fa{
+    transform: rotateY(360deg);
+    color:blue;
+}
+
+
+

@@ -1,0 +1,508 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    background:#f2f2f2;
+}
+
+
+.team{
+    height: 100vh;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin:50px auto;
+}
+
+.row{
+    width:100%;
+    position: relative;
+    
+    
+}
+
+.team .container .row h1{
+    font-weight: 800;
+    text-align: center;
+    color:blue;
+    font-size: 34px;
+    text-transform: uppercase;
+} 
+.team f.container .row p{
+    font-weight: 400;
+    color:#000;
+    font-size:14px;
+   
+    padding-left:20px;
+    text-align: center;
+}
+
+.container .row .column{
+    width:calc(25% - 20px);
+    min-height: 250px;
+    position: relative;
+    background: #fff;
+    float:left;
+    margin:20px 10px;
+    overflow: hidden;
+    
+}
+.container .row .column .imageblock{
+    position: relative
+    
+}
+.container .row .column .imageblock img{
+    width:100%;
+    transition:5s;
+    
+}
+.container .row .column:hover .imageblock img{
+    transform: scale(1.15);
+}
+.container .row .column .text{
+    
+    bottom: -120px;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    width:100%;
+   
+    box-sizing: border-box;
+    transition: .5s;
+}
+.container .row .column:hover .text{
+    bottom: 0;
+}
+.container .row .column .text h3{
+    text-align: right;
+    color:#fff;
+    font-weight: 300;
+    margin:0;
+    padding:0;
+}
+.container .row .column .text h3 span{
+    color:#981;
+    top:-6px;
+}
+.container .row .column .text ul{
+    list-style: none;
+     display: flex;
+     margin:0;
+    padding: 0;
+    
+}
+.container .row .column .text ul li a{
+   
+    padding:0 10px;
+    color:#fff;
+ 
+    
+}
+
+.container .row .column .text ul li a .fa{
+    color:#fff;
+    transition: 5s;
+}
+.container .row .column .text ul li a:hover .fa{
+    transform: rotateY(360deg);
+    color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home{
+            background-image: url("..img/last/new.jpg");
+            background-position: top;
+            background-size: cover;
+            padding-top:200px;
+            padding-bottom: 90px;
+            background-repeat: no-repeat;
+            z-index: 1;
+        }
+        .head-text{
+            color:#fff;
+           
+                
+        }
+        .head-text h1{
+            font-size: 60px;
+            line-height: 70px;
+            letter-spacing: 0.05px;
+            padding-top: 20px;
+            font-weight: 600;
+            color:#fff;
+        }
+        .head-text p{
+            font-size: 18px;
+            line-height: 30px;
+           text-align: justify;
+        }
+        .navbar{
+            
+            margin-top: -52px;
+          
+            border-bottom: none;
+            transition: all 0.5s ease-in-out;
+           
+            
+        }
+        .navbar-nav{
+            float:right;
+            text-align: center;
+           
+            padding-top: -20px;
+           
+        }
+        .navbar-collapse ul li a{
+            color:#fff !important;
+            padding:13px;
+            font-size: 13px !important;
+            transition: all .5s ease-in-out !important;
+            letter-spacing: 1px !important;
+            font-weight: 600 !important;
+            text-transform: uppercase !important;
+            background: transparent;
+            overflow: hidden;
+            margin-left: 10px;
+            margin-top: 21px;
+            font-family: sans-serif;
+            
+            
+        }
+        .navbar-collapse ul li a:hover, .navbar-collapse ul li a:focus{
+            color:deepskyblue!important;
+            background: none !important;
+            border-bottom: 1px solid deepskyblue;
+          
+           
+        }
+        .navbar-toggle{
+            color:#fff;
+            border: 1px solid #fff;
+            transition: all 0.5s ease-in;
+        }
+        .icon-bar{
+            color:#fff !important;
+            background-color:white !important;
+            
+        }
+        .navbar-inverse .navbar-collapse{
+            background-color: transparent !important;
+        }
+        .location{
+            border: 1px solid white;
+            padding: 10px 30px;
+            margin:12px;
+            
+         
+            
+        }
+        .navbar-fixed-top{
+            background-color: transparent !mportant;
+        }
+        .secondary{
+            background:rgb(0, 0,0,0.4);
+           
+        }
+          nav .navbar-brand img{
+                height: 80px;
+                margin-top: 50;
+                 
+            }
+        .hope .now{
+            
+            background-image: url("img/last/p5.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hope .now h1{
+            margin-top: 200px;
+            margin-bottom: 250px;
+        }
+        .board{
+            padding-top: 100px;
+        }
+        .board h3{
+            font-weight: 800;
+            margin-top: 300px;
+   
+            text-transform: uppercase;
+            text-align: center;
+            color:blue;
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+        .page-footer{
+                padding-top:10px;
+                padding-bottom: 1px;
+                background-color:#000;
+            }
+            .font-weight-bold{
+                margin-top:50px;
+            }
+            .ml-lg-0{
+                padding-top: 5px;
+            }
+            .btn-floating{
+                padding-top: 70px;
+                font-size:35px;
+            }
+            .copy{
+                text-align: left;
+            }
+            footer p{
+                font-size:14px;
+                color:fff;
+            }
+            footer p a{
+                font-size:14px;
+                color:#fff;
+                text-decoration: none;
+            }
+            footer p a:hover{
+                color:teal;
+                text-decoration: none;
+            }
+            footer h6{
+                font-size: 18px;
+                color:#fff;
+                padding-bottom: 20px;
+            }
+        
+        .about h3{
+            color:blue;
+            font-size:34px;
+            margin-top:80px;
+            font-weight: 900;
+        }
+        .about p{
+            margin:30px 20%;
+            font-size:16px;
+            border-left: 3px solid midnightblue;
+       
+            padding-left:20px;
+            font-weight: 900;
+        }
+        .about ul li{
+            list-style: none;
+            margin-left:35%;
+            font-weight: 900;
+        }
+        .who-we-are{
+             background-image: url("img/img/bb.jpeg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: bottom;
+            padding:10px;
+              font-family: sans-serif;
+            
+        }
+        .who-we-are h3{
+      
+            color: blue;
+            font-size: 36px;
+              font-family: sans-serif;
+            font-weight: 300px;
+            padding-bottom: 20px;
+        }
+        .who-we-are p{
+            color: darkblue;
+            padding: 0 100px;
+             font-size: 20px;
+            font-weight: 300px;
+              font-family: sans-serif;
+        }
+        .vision {
+            background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)), url("static_in_pro/our_static/img/last/walk.jpg");
+            background-size: cover;
+            background-position: center;
+            color:#fff;
+           
+            margin-bottom:0;
+            margin-top:-110px;
+         
+        }
+     
+        .vision h3{
+             font-size: 36px;
+            font-weight: 300;
+              font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+        .vision p{
+             font-size:20px;
+              font-family: sans-serif;
+            letter-spacing: 1px;
+        }
+        .about-vision{
+            background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+              font-family: sans-serif;
+            padding:210px 0;
+            margin-left:-110px;
+            
+        }
+        .mission{
+            color:#fff;
+              font-family: sans-serif;
+            margin-top:-50px;
+            background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("img/last/read.jpg");
+            background-position: center;
+            background-size: cover;
+          
+        }
+        .mission-text{
+            background: linear-gradient(to right, #31bfce 40%, #2580be 100%);
+            background-attachment: fixed;
+            
+            padding:190px 10px;
+            margin-left:-29px;
+            margin-right:-134px;
+            
+        }
+        .mission h3 {
+            font-size: 36px;
+            font-weight: 300;
+              font-family: sans-serif;
+            padding-top: -100px;
+            letter-spacing: 1px;
+        }
+        .mission p{
+            font-size:20px;
+            font-family: sans-serif;
+            font-weight: 300;
+        }
+        .slogan{
+            margin-top:-50px;
+            color:#fff;
+              font-family: sans-serif;
+            text-align: center;
+            
+            background-image: url("img/img/sky-31.jpg");
+            background-attachment: fixed;
+            background-position:top;
+            background-size: cover;
+            background-attachment: fixed;
+            padding:135px 0;
+        }
+        .slogan h3{
+          
+            font-size: 36px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            
+        }
+        .slogan .white{
+            color:white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .slogan .blue{
+            color:blue;
+            font-size: 22px;
+             font-weight: bold;
+        }
+        .slogan .green{
+            color:green !important;
+            font-size: 22px;
+             font-weight: bold;
+        }
+        .slogan p{
+            font-size:20px;
+            margin:0 30px;
+            padding: 0 90px;
+            font-family: sans-serif;
+             font-weight: 300;
+        }
+        .empty{
+            background-image: url("img/img/bb.jpeg");
+            background-position: center;
+            background-attachment: fixed;
+            padding: 170px 0;
+        }
+        
+        .value{
+      
+             margin-top:-240px;
+            color:#fff;
+           
+            background: url("img/last/k2.jpg");
+            background-position: left;
+            background-size: cover;
+            padding: 70px 0;
+            
+        }
+        .value p{
+            font-size:18px;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+        .value h3{
+            font-size: 36px;
+            letter-spacing: 1px;
+            font-weight: 300;
+         
+        }
+        .value-text{
+          
+             background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+            padding:120px 40px;
+            text-align: center;
+            margin-top: -200px;
+            margin-left:-10px;
+            font-size:20px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            
+            
+        }
+        .overall{
+            color:#fff;
+            
+            margin-top:-230px;
+            background: url("img/last/disc.jpg");
+            background-position: center;
+            background-size: cover;
+            padding:90px 0;
+            
+            
+        }
+        .overall h3 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-family: sans-serif;
+        }
+        .overall-text{
+            background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+            margin-top: -240px;
+            padding:100px 30px;
+            margin-left: -30px;
+            margin-right:-10px;
+        }
+        .overall p{
+            font-size:20px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-family: sans-serif;
+        }
+    
+
+

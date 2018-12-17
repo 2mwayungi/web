@@ -1,0 +1,27 @@
+
+{% extends 'base_news.html' %}
+
+{% block head %}{{instance.title}}|{{block.super}} {% endblock %}
+{% block content %}
+<div class="col-sm-8 col-sm-offset-2" style="padding-bottom:50px;">
+<br>
+<br>
+
+
+<br>
+
+
+
+
+
+{{instance.content|linebreaks}}{% lorem %} <br>
+<hr>
+<br>
+<div class="fb-comments" data-href="{{request.build_absolute_uri}}" data-numposts="5"></div>
+
+
+
+
+</div>
+
+{% endblock %}

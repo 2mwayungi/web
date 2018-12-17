@@ -1,0 +1,666 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>MYCN|Programs</title>
+        
+   
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        
+        
+        <!--new-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+            
+            body{
+    font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+            .program{
+                background-color: aliceblue;
+                padding-bottom: 20px;
+               
+            }
+            .who-we-are{
+            background-color: aliceblue;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: bottom;
+            padding:10px;
+              font-family: sans-serif;
+            
+        }
+        .who-we-are h3{
+            margin-top: 40px;
+            color: #2580be;
+            font-size: 36px;
+            font-family: sans-serif;
+            font-weight: 300;
+            padding-bottom: 20px;
+        }
+            .head-king{
+                background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("{% static 'img/img/new.jpg' %}");
+                background-size:cover;
+                background-position:top;
+                background-attachment: fixed;
+                 margin-bottom: 10px;
+                padding-top: 165px;
+        
+              
+            }
+            .head-king h1{
+                font-size: 49px;
+                left: 10%;
+                font-weight: 300;
+                font-family: sans-serif;
+                line-height: 50px;
+                letter-spacing: 0.05px;
+                color:#fff;
+                margin-top: 269px;
+                margin-bottom: 10px;
+                margin-left: 1px;
+                margin-right: -2px;
+                text-align: -10px;
+            }
+            .head-king h1 span{
+                font-weight: 600;
+            }
+            .head-king p{
+               font-size:20px;
+                color:#fff;
+                line-height: 25px;
+                text-align: justify;
+                margin-bottom: 15px;
+                margin: 25px 0 54px;
+            }
+            .head-king .picture{
+                margin-top: 120px;
+            }
+                .head-king div.icon .fa:hover{
+                color:#2580be;
+            }
+            
+            .head-king .kichwa a{
+                font-size:14px;
+                margin-top:10px;
+                width:220px;
+                height: 60px;
+                border:2px solid transparent;
+                border-radius: 50px;
+                padding:10px 30px;
+                background-color:#fff;
+                color:saddlebrown;
+                margin-right: 20px;
+            
+                transition: all 0.5s;
+                font-family: tahoma;
+                font-weight: 700;
+                
+                text-transform: uppercase;
+            }
+            .navbar{
+                border-bottom: none;
+                padding:15px 0;
+                transition: all 0.5s ease-in-out;
+            }
+            .head-king div.icon{   
+            font-size:20px;
+                margin-right: 40px;
+                margin-left: 15px;
+                margin-top: 30px;
+                padding-left: 10px;
+            }
+            .head-king div.icon {
+                color:white;
+            }
+      
+            .navbar ul li a{
+                color:#fff;
+                background:transparent !important;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 13px;
+                text-transform: uppercase;
+                transition: all 0.5s ease-in-out;
+                margin-left: 10px;
+            }
+            
+          
+             .navbar ul li a:hover, .navbar ul li a:focus{
+                color:deepskyblue !important;
+                background: none !important;
+                 border-bottom: 2px solid deepskyblue;
+                
+            }
+            .navbar-toggle{
+                border: 1px solid white;
+                color:white;
+                transition: all 0.5s ease-in;
+            }
+            .icon-bar{
+                transition: all 0.5s ease-in-out;
+                color:white;
+                background: white;
+            }
+            .navbar-toggle:hover{
+                color:deepskyblue;
+            }
+          
+            .leo{
+                background-color:transparent;
+            }
+            .location{
+                border:1px solid #fff;
+                padding: 10px 30px;
+                background-color: deepblue;
+            }
+            .navbar-inverse .navbar-collapse{
+                background: transparent !important;
+            }
+           .navbar-inverse{
+            background-color: transparent !important;
+        }
+            .navbar-header .navbar-brand{
+                color:#fff;
+                font-weight: bold;
+            }
+            .navbar-header .navbar-brand:hover{
+                color:#564;
+            }
+            @keyframes ani-mouse{
+                0%{
+                    opacity:1;
+                    top:29%;
+                }
+                15%{
+                    opacity:1;
+                    top:50%;
+                }
+                50%{
+                    opacity:0;
+                    top:50%;
+                }
+                100%{
+                    opacity:0;
+                    top:50%;
+                }
+            }
+           
+           
+            .secondary{
+                color:#fff;
+                background-color: rgba(0,0,0,0.4);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: all 0.5s ease-in;
+                
+                
+                
+                
+                
+            }
+            .navbar-brand img{
+                height: 70px;
+                margin-top: -25px;
+                 
+            }
+             h3:after{
+                content:"";
+                width: 100px;
+                  margin-top: 10px !important;
+                height: 4px;
+                margin: 0 auto;
+                margin-top:15px;
+              margin-bottom:25px;
+                background-color:#2580be;
+                display: block;
+            }
+            
+            .page-footer{
+                padding-top:10px;
+               
+                padding-bottom: 50px;
+                background:rgba(0,0,0,0.7);
+            }
+            .font-weight-bold{
+                margin-top:50px;
+            }
+            .ml-lg-0{
+                padding-top: 50px;
+            }
+            .col-md-12 .btn-floating{
+                padding-top: 70px;
+                font-size:35px;
+            }
+            .copy{
+                text-align: left;
+            }
+            footer p{
+                font-size:14px;
+                color:#fff;
+            }
+            footer p a{
+                font-size:14px;
+                color:#fff;
+                text-decoration: none;
+            }
+            footer p a:hover{
+                color:#fff;
+                text-decoration: none;
+            }
+            footer h6{
+                font-size: 18px;
+                color:#fff;
+                padding-bottom: 20px;
+            }
+            footer .logo{
+                position: left;
+            }
+.focus{
+             margin-top:50px;
+            color:#fff;
+            text-align: center;
+            text-align: center;
+            left:70px;
+            
+            background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+            background-position:center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding:60px;
+            
+            
+        }
+      
+        .focus .col-md-4 p{
+            margin-bottom: 15px;
+        }
+        .focus .focus-text h3{
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-top: -55px;
+            padding-bottom: 10px;
+            
+        }
+        .focus .focus-text p{
+            padding-bottom: 10px;
+        }
+        
+        
+
+        <!---TEAM-->
+
+   
+            .program {
+                background-color:aliceblue;
+            }
+            .over{
+                background-image:url("{% static 'img/img/1.jpg' %}");
+                 overflow: hidden;
+                margin-left:12px;
+            }
+            .new{
+                background-image:url("{% static 'img/img/ge12.jpg' %}");
+                 overflow: hidden;
+            }
+            .a{
+                background-image:url("{% static 'img/img/3.jpg' %}");
+                 overflow: hidden;
+            }
+             .b{
+                background-image: url("{% static 'img/img/4.jpg' %}");
+                 overflow: hidden;
+            }
+             .c{
+                background-image: url("{% static 'img/img/one.jpg' %}");
+                 overflow: hidden;
+            }
+             .d{
+                background-image:url("{% static 'img/img/6.jpg' %}");
+                 overflow: hidden;
+            }
+             .e{
+                background-image: url("{% static 'img/last/bab.jpg' %}");
+                 overflow: hidden;
+            }
+             .f{
+                background-image: url("{% static 'img/img/8.jpg' %}");
+                 overflow: hidden;
+            }
+             .g{
+                background-image: url("{% static 'img/last/shaa.jpg' %}");
+                 overflow: hidden;
+            }
+             .h{
+                background-image: url("{% static 'img/img/10.jpg' %}");
+                 overflow: hidden;
+            }
+             .i{
+                background-image: url("{% static 'img/img/j.jpg' %}");
+                 overflow: hidden;
+            }
+             .j{
+                 background-image: url("{% static 'img/last/hr.jpg' %}");
+                 overflow: hidden;
+            }
+            .text-over{
+                width:360px;
+                height: 250px;
+                float:left;
+                margin:10px;
+                background-size:100%;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: .5s;
+                overflow: hidden !important;
+                position:relative;
+                margin-bottom: 20px;
+            }
+            .text-over:hover{
+                background-size: 110%;
+            }
+            .text-over:after{
+                position: absolute;
+                white-space: pre-wrap;
+                top:90%;
+                bottom: 0;
+                left:0;
+                right:0;
+            content:attr(king);
+                background-color: rgba(0,0,0,0.7);
+                word-wrap: break-word;
+                overflow: hidden;
+                color:#fff;
+              
+                padding:0 8px;
+             
+                transition: .5s;
+            }
+            .text-over:hover:after{
+              
+                top:0;
+                padding: 8px;
+            }
+            .text-over:first-line{
+                color:white;
+                margin-bottom: 20px;
+                font-weight: bold;
+                text-align: center;
+                 background-color: #2580be;
+            }
+            
+        </style>
+        
+            </head>
+ 
+   <body>
+    <nav class="navbar navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-target="#navi" data-toggle="collapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <a href="" class="navbar navbar-brand"><img src="{% static 'img/last/0.png' %}" class="logo" alt=""></a>
+         </div>
+         <div class="collapse navbar-collapse" id="navi">
+         <ul class="nav navbar-nav navbar-right">
+             <li><a href="{% url 'home' %}">Home</a></li>
+             <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'programs' %}">Programs</a></li>
+             <li><a href="{% url 'team' %}">Team</a></li>
+            
+             <li><a href="{% url 'contact' %}">Contact Us</a></li>
+              <li><a href="{% url 'posts:list' %}">Blog</a></li>
+             <li><a href="{% url 'donate' %}" class="location">DONATE</a></li>
+         </ul>
+         </div>
+         </div>
+          
+      </nav> 
+    <section id="head-title" class="head-king">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 kichwa">
+               
+
+                <h1><span class="for">PROGRAMS</span></h1>
+                <!--<a href="" class="btn btn-full">Show me more</a>
+                <a href="" class="btn btn-half">I'm hungry</a>-->
+               
+                   
+               </div>
+             
+           </div>
+           <div class="icon">
+               <i class="fa fa-instagram"></i>
+               <i class="fa fa-facebook"></i>
+               <i class="fa fa-twitter"></i>
+               <i class="fa fa-youtube"></i>
+               <i class="fa fa-linkedin"></i>
+               <i class="fa fa-google-plus"></i>
+           </div>
+       </div>
+       
+           
+        
+    </section>  
+      
+      <script>
+       $(window).scroll(function(){
+                       var top= $(window).scrollTop();
+                         if (top >=235){
+                             $("nav").addClass('secondary');
+                        
+                         }
+                         else
+                             if($("nav").hasClass('secondary')){
+                                      $("nav").removeClass('secondary');
+                                 }
+                             });  
+       
+       </script>
+       <section class="who-we-are">
+         <div class="container">
+           <div class="row">
+           <div class="col-md-12">
+           <div class="we-are">
+            <h3 class="text-center"> OUR PROGRAMS</h3>
+            
+            </div>
+        </div>
+        </div>
+        </div>
+        </section>
+       <section class="program">
+         <div class="container">
+         
+         
+          
+                       <div class="text-over over" king="YOUNG REPORTERS PROGRAM
+                       
+The program  focuses on advocating child rights through child led Radio and TV shows. MYCN works in collaboration with UNICEF Tanzania. Members of this program are children who are below 18 years. For daily updates kindly visit the programme facebook page: Mtandao wa Wanahabari watoto Tanzania  (Young Reporters Network Tanzania) ">
+            
+        </div>
+         
+                 
+                
+                      <div class="text-over new" king="YOUNG MAPPERS PROJECT  
+         
+Engaging young people in taking action against Climate Change and Environmental pollution.  ">
+          
+        </div>
+          
+                       
+             
+          
+                       <div class="text-over a" king="CHILDREN COUNCILS PROGRAM 
+          
+Children plaforms for child participation in issues related to their affairs and world as a whole. They promote accountability on children's issues and  enable children exercise leadership spirit. Program facebook page; Baraza la Watoto Mkoa wa Mwanza - Mwanza Children's Council  ">
+        </div>
+            
+                       <div class="text-over b" king="YOUTH REPORTERS PROGRAM
+          
+Media platform for youth to discuss their issues and address their challenges throug radio. We work in partnership with Children's Radio Foundation  (CRF). For daily updwtes visit facebook page of the programme: Wanahabari Vijana TZ - TZ Youth Reporters ">
+        </div>
+                         <div class="text-over h" king="VOLUNTEERS PROGRAM
+          
+ Gives a chance to different people within and outside the country to volunteer at MYCN ">
+        </div>
+                         
+                         
+                         
+                         
+                         
+                         
+                         
+            
+                       <div class="text-over d" king="YOUTH RESEARCHERS  
+          
+Engaging youth in research for development.   ">
+        </div>
+            
+                       <div class="text-over e" king="TALENTS FOR LIFE PROGRAM 
+          
+    Transforming youth talents into employement. Youth are acting, singing, dancing, drawing and designing through the project. Products of their talents generate income for improving their life standard.">
+        </div>
+            
+                       <div class="text-over f" king="SPORTS & GAMES PROGRAM  
+          
+Involving youth and children in sports for changes and life improvement. ">
+        </div>
+            
+                       <div class="text-over g" king="SHIKOME PROJECT
+          
+Shikome is the sukuma word meaning to meet and talk together about culture. The project brings together youth and children of different culture to learn from elders and share cultural values. ">
+        </div>
+            
+            <div class="text-over c" king="YOUNG WOMEN ENTREPRENEURSHIP PROJECT
+                                
+ Gives an opportunity to young women under 30 years old, who did not have access to basic education or who did not proceed with studies because of extenuating circumstances, to produce new ways of being economically successful in life through entrepreneurship activities.  ">
+        </div>
+            
+                       <div class="text-over i" king="YOUNG REPORTERS PROGRAM
+                                           
+The program  focuses on advocating child rights through child led Radio and TV shows. MYCN works in collaboration with UNICEF Tanzania. Members of this program are children who are below 18 years. For daily updates kindly visit the programme facebook page: Mtandao wa Wanahabari watoto Tanzania  (Young Reporters Network Tanzania)">
+        </div>
+            
+                       <div class="text-over j" king="YOUNG MAPPERS PROJECT  
+         
+Engaging young people in taking action against Climate Change and Environmental pollution. ">
+        </div>
+           
+          </div> 
+        
+       </section>
+       
+      <!--Footer-->
+      <footer class="page-footer font-small  pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="" class="navbar navbar-brand"><img src="img/logo1.jpg" class="logo" alt=""></a>MYCN - Mwanza Youth and Children Network </h6>
+                      <p>Mwanza Youth and Children Network (MYCN) is a youth led NGO .The organization was established to serve the youth and children generation living in the Tanzania through different programs and project interventions.</p>
+                  </div>
+                 <div class="col-md-8 col-lg-6 col-xl-6 mx-auto mt-6">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                      <p><i class="fa fa-home mr-3"></i> MYCN - Mwanza Youth and Children Network
+                        <br>P.O.BOX 6491
+                        Mwanza, <br>Tanzania, <br> East Africa</p>
+                      <!--<p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>-->
+                      <p><i class="fa fa-phone mr-3"></i> +255 754 016904</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 712 393669</p>    
+                      <p><i class="fa fa-phone mr-3"></i> +255 766 565257</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 784 614665</p>
+                  </div>
+                  <!--/.Fourth column-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-6 ">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Sections</h6>
+                
+         <ul class="nav navbar-nav navbar-right">
+             <li><a href="/">Home</a></li>
+             <li><a href="{% url 'about' %}">About</a></li>
+             <li><a href="{% url 'programs' %}">Programs</a></li>
+             <li><a href="{% url 'team' %}">Team</a></li>
+             
+             <li><a href="{% url 'contact' %}">Contact Us</a></li>
+               <li><a href="{% url 'posts:list' %}">Blog</a></li>
+             <li><a href="{% url 'donate' %}" class="location">DONATE</a></li>
+         </ul>
+     
+                  
+             
+                      
+                  </div>
+                  <!--/.Second column-->
+      
+                
+      
+                 
+      
+              </div>
+              <div class="col-md-12 col-lg-12 ml-lg-0">
+      
+                      <!--Social buttons-->
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  <!--Grid column-->
+                  <div class="col-md-12 col-lg-12">
+      
+                      <!--Copyright-->
+                      <p class="text-center text-md-left grey-text copy">© 2018 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MYCN - Mwanza Youth and 
+Children Network </strong></a></p>
+                      <!--/.Copyright-->
+      
+                  </div><br>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  
+                      <!--/.Social buttons-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+              </div>
+      
+          </div>
+      
+      </footer>
+      <!--/.Footer-->
+                      
+       
+       
+       
+       
+   </body>
+
+</html>

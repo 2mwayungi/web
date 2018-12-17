@@ -1,0 +1,80 @@
+html,
+body{
+    height: 100%;
+}
+
+#cover{
+    height: 100%;
+    background: #222 url('img/a.jpg') center center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+    text-align: center;
+    display: flex;
+    margin:0 auto;
+    align-items: center;
+    
+    
+}
+#cover-caption{
+    width:100%;
+}
+img{
+    max-width: 100%;
+}
+.section-container{
+    padding:80px 0;
+}
+.container{
+    text-align: center;
+}
+.row{
+    padding:30px 0;
+}
+#about{
+    background: #222 url('img/b.jpg') center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.about-text{
+    color:white;
+    background: rgba(0,0,0,0.8);
+    padding:30px;
+}
+.pagination {
+   justify-content: center;
+}
+#news{
+    padding:25px 0;
+}
+#main-footer{
+    background: #222;
+    color:whitesmoke;
+    padding:44px 0;
+    font-size: 16px;
+}
+.meal-photo img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: all 0.5s;
+  
+   
+}
+.meal-photo{
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+}
+.meal-photo img:hover{
+    transform: scale(1.05);
+}
+
+    
+    
+    
+    
+    
+    

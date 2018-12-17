@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="col-sm-6 col-sm-offset-3">
+<h1>{{title}} king of all Time</h1>
+<form method="GET"  action="" value="{request.GET.q}">
+    <input type="text" name="q" placeholder="search">
+    <input type="submit" value="search">
+</form>
+
+<div class="row">
+{% for obj in post %}
+   
+  <div class="col-sm-12">
+    <div class="thumbnail">
+    {% if obj.image %}
+     <img src="{{obj.image.url}}" class="img-responsive" alt="">
+     {% endif %}
+      <div class="caption">
+        <h3><a href="{{obj.get_absolute_url }}">{{obj.title}} <small>{{obj.publish}}</small><br></a></h3>
+       
+        <p>{{obj.text|linebreaks|truncatechars:150}}</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a> </p>
+      </div>
+    </div>
+  </div>   
+    
+ 
+   
+  
+  
+{% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if post.has_previous %}
+            <a href="?page={{ post.previous_page_number }}{% if request.Get.q %}&q={{request.GET.q}}{% endif %}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ post.number }} of {{ post.paginator.num_pages }}.
+        </span>
+
+        {% if post.has_next %}
+            <a href="?page={{ post.next_page_number }}{% if request.Get.q %}&q={{request.GET.q}}{% endif %}">next</a>
+        {% endif %}
+    </span>
+</div>
+
+</div>
+</div>
+{% endblock %}
+
+
+
+
+
+

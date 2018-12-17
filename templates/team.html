@@ -1,0 +1,865 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>MYCN|Team</title>
+        
+   
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+        
+        <!--new-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            
+            body{
+                background-color: aliceblue;
+    font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+           
+            .head-king{
+                background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("{% static 'img/last/pro.jpg' %}");
+                background-size:cover;
+                background-position: center;
+                background-attachment: fixed;
+             
+                padding-top: 165px;
+        
+              
+            }
+            .head-king h1{
+                font-size: 49px;
+                left: 10%;
+                font-weight: 300;
+                font-family: sans-serif;
+                line-height: 50px;
+                letter-spacing: 0.05px;
+                color:#fff;
+                margin-top: 269px;
+                margin-bottom: 10px;
+                margin-left: 1px;
+                margin-right: -2px;
+                text-align: -10px;
+                
+            }
+            .head-king h1 span{
+                font-weight: 600;
+            }
+                .head-king div.icon .fa:hover{
+                color:#2580be;
+            }
+            
+            .head-king p{
+               font-size:20px;
+                color:#fff;
+                line-height: 25px;
+                text-align: justify;
+                margin-bottom: 15px;
+                margin: 25px 0 54px;
+            }
+            .head-king .picture{
+                margin-top: 120px;
+            }
+            .head-king .kichwa a{
+                font-size:14px;
+                margin-top:10px;
+                width:220px;
+                height: 60px;
+                border:2px solid transparent;
+                border-radius: 50px;
+                padding:10px 30px;
+                background-color:#fff;
+                color:saddlebrown;
+                margin-right: 20px;
+            
+                transition: all 0.5s;
+                font-family: tahoma;
+                font-weight: 700;
+                
+                text-transform: uppercase;
+            }
+            .navbar{
+                border-bottom: none;
+                padding:15px 0;
+                transition: all 0.5s ease-in-out;
+            }
+            .head-king div.icon{   
+            font-size:20px;
+                margin-right: 40px;
+                margin-left: 15px;
+                margin-top: 30px;
+                padding-left: 10px;
+            }
+            .head-king div.icon {
+                color:aliceblue;
+                
+            }
+            
+ 
+            .navbar ul li a{
+                color:#fff;
+                background:transparent !important;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 13px;
+                text-transform: uppercase;
+                transition: all 0.5s ease-in-out;
+                margin-left: 10px;
+            }
+            
+          
+             .navbar ul li a:hover, .navbar ul li a:focus{
+                color:deepskyblue !important;
+                background: none !important;
+                 border-bottom: 2px solid deepskyblue;
+                
+            }
+            .navbar-toggle{
+                border: 1px solid white;
+                color:white;
+                transition: all 0.5s ease-in;
+            }
+            .icon-bar{
+                transition: all 0.5s ease-in-out;
+                color:white;
+                background: white;
+            }
+            .navbar-toggle:hover{
+                color:deepskyblue;
+            }
+          
+            .leo{
+                background-color:transparent;
+            }
+            .location{
+                border:1px solid #fff;
+                padding: 10px 30px;
+                background-color: deepblue;
+            }
+            .navbar-inverse .navbar-collapse{
+                background: transparent !important;
+            }
+           .navbar-inverse{
+            background-color: transparent !important;
+        }
+            .navbar-header .navbar-brand{
+                color:#fff;
+                font-weight: bold;
+            }
+            .navbar-header .navbar-brand:hover{
+                color:#564;
+            }
+            @keyframes ani-mouse{
+                0%{
+                    opacity:1;
+                    top:29%;
+                }
+                15%{
+                    opacity:1;
+                    top:50%;
+                }
+                50%{
+                    opacity:0;
+                    top:50%;
+                }
+                100%{
+                    opacity:0;
+                    top:50%;
+                }
+            }
+           
+           .head-king .scroll-btn > *:hover,
+           .head-king .scroll-btn > *:focus,
+           .head-king .scroll-btn > *:active,
+           .head-king .scroll-btn > *.active{
+                opacity:0.8;
+                filter:alpha(opacity=80)
+            }
+           .head-king .scroll-btn .mouse{
+                position:relative;
+                display:block;
+                width:35px;
+                height:55px;
+                margin:0 auto 20px;
+                box-sizing:border-box;
+                border:3px solid white;
+                border-radius:23px;
+            }
+
+           .head-king .scroll-btn .mouse > *{
+                position:absolute;
+                display:block;
+                top:29%;
+                left:50%;
+                width:8px;
+                height:8px;
+                margin: -4px 0 0 -4px;
+                background: white;
+                border-radius:50%;
+                animation:ani-mouse 2.5s linear infinite;
+            }
+            .scroll-btn .mimi{
+                text-align:center;
+            }
+            .secondary{
+                color:#fff;
+                background-color: rgba(0,0,0,0.5);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: all 0.5s ease-in;
+                
+                
+                
+                
+                
+            }
+            .navbar-brand img{
+                height: 70px;
+                margin-top: -25px;
+                 
+            }
+            
+            .page-footer{
+                padding-top:10px;
+               
+                padding-bottom: 50px;
+                background: rgba(0,0,0,0.7);
+            }
+            .font-weight-bold{
+                margin-top:50px;
+            }
+            .ml-lg-0{
+                padding-top: 50px;
+            }
+            .col-md-12 .btn-floating{
+                padding-top: 70px;
+                font-size:35px;
+            }
+            .copy{
+                text-align: left;
+            }
+            footer p{
+                font-size:14px;
+                color:#fff;
+            }
+            footer p a{
+                font-size:14px;
+                color:#fff;
+                text-decoration: none;
+            }
+            footer p a:hover{
+                color:#fff;
+                text-decoration: none;
+            }
+            footer h6{
+                font-size: 18px;
+                color:#fff;
+                padding-bottom: 20px;
+            }
+            footer .logo{
+                position: left;
+            }
+.focus{
+             margin-top:50px;
+            color:#fff;
+            text-align: center;
+            text-align: center;
+            left:70px;
+            
+            background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+            background-position:center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding:60px;
+            
+            
+        }
+      
+        .focus .col-md-4 p{
+            margin-bottom: 15px;
+        }
+        .focus .focus-text h3{
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-top: -55px;
+            padding-bottom: 10px;
+            
+        }
+        .focus .focus-text p{
+            padding-bottom: 10px;
+        }
+        
+        
+
+        <!---TEAM-->
+
+   
+            .team {
+    height: 100vh;
+    padding: 90px 0;
+    box-sizing: border-box;
+}
+.team .container{
+    width: 80%;
+    margin:50px auto;
+}
+
+.team .row{
+    width:100%;
+    position: relative;
+    
+    
+}
+
+.team .container .row h1{
+    font-weight: 800;
+    text-align: center;
+    color:#2580be;
+    font-size: 34px;
+    margin-top:70px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+            .team2 h1{
+                margin-top:30px !important;
+            }
+.team f.container .row p{
+    font-weight: 400;
+    color:#000;
+    
+   
+    padding-left:20px;
+    text-align: center;
+}
+
+.team .container .row .column{
+    width:calc(25% - 20px);
+   
+    position: relative;
+    background: #fff;
+    float:left;
+    margin:20px 10px;
+    overflow: hidden;
+    
+}
+.team .container .row .column .imageblock{
+    position: relative
+    
+}
+.team .container .row .column .imageblock img{
+    width:100%;
+    transition:5s;
+    
+}
+.team .container .row .column:hover .imageblock img{
+    transform: scale(1.15);
+}
+.team .container .row .column .text{
+    
+    bottom: -120px;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0, 0.5);
+    width:100%;
+   
+    box-sizing: border-box;
+    transition: .5s;
+}
+@media screen and (min-width: 1171px){
+    .team .container .row .column .text h3{
+    text-align: right;
+    color:#fff;
+    font-weight: 300;
+    margin:0;
+    padding:0;
+     font-size: 10px;
+}
+    
+}
+.team .container .row .column:hover .text{
+    bottom: 0;
+}
+.team .container .row .column .text h3{
+    text-align: right;
+    color:#fff;
+    font-weight: 300;
+    margin:0;
+    padding:0;
+     font-size: 18px;
+}
+            
+            .team h1:after{
+        content:'';
+        width:100px;
+        height: 4px;
+        display: block;
+        margin-top: 10px !important;
+    background-color:#2580be;
+        margin: 0 auto;
+
+        }
+.team .container .row .column .text h3 span{
+    color:#1da1f2;
+    top:-9px;
+    font-size: 18px;
+}
+.team .container .row .column .text ul{
+    list-style: none;
+     display: flex;
+     margin:0;
+    padding: 0;
+    
+}
+.team .container .row .column .text ul li a{
+   
+    padding:0 7px;
+    color:#fff;
+ 
+    
+}
+
+.team .container .row .column .text ul li a .fa{
+    color:#fff;
+    transition: 5s;
+}
+.team .container .row .column .text ul li a:hover .fa{
+    transform: rotateY(360deg);
+    color:blue;
+}
+           .team3{
+                margin-top:-35px;
+            }
+            .team2{
+                margin-top:20px;
+            }
+
+            .team1{
+                margin-top:-60px;
+            }
+
+
+        </style>
+        
+            </head>
+ 
+   <body>
+    <nav class="navbar navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-target="#navi" data-toggle="collapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+              <a href="" class="navbar navbar-brand"><img src="{% static 'img/img/mycn.png' %}" class="logo" alt=""></a>
+         </div>
+         <div class="collapse navbar-collapse" id="navi">
+         <ul class="nav navbar-nav navbar-right">
+             <li><a href="{% url 'home' %}">Home</a></li>
+             <li><a href="{% url 'about' %}">About</a></li>
+             <li><a href="{% url 'programs' %}">Programs</a></li>
+             <li><a href="{% url 'team' %}">Team</a></li>
+             
+             <li><a href="{% url 'contact' %}">Contact Us</a></li>
+             <li><a href="{% url 'posts:list' %}">Blog</a></li>
+             <li><a href="{% url 'donate' %}" class="location">DONATE</a></li>
+         </ul>
+         </div>
+         </div>
+          
+      </nav> 
+    <section id="head-title" class="head-king">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 kichwa">
+               
+
+                <h1 class="text-center"><span class="for">TEAM</span></h1>
+                <!--<a href="" class="btn btn-full">Show me more</a>
+                <a href="" class="btn btn-half">I'm hungry</a>-->
+               
+                   
+               </div>
+             
+           </div>
+           <div class="icon">
+               <i class="fa fa-instagram"></i>
+               <i class="fa fa-facebook"></i>
+               <i class="fa fa-twitter"></i>
+               <i class="fa fa-youtube"></i>
+               <i class="fa fa-linkedin"></i>
+               <i class="fa fa-google-plus"></i>
+           </div>
+       </div>
+       
+           
+        
+    </section>  
+      
+      <script>
+       $(window).scroll(function(){
+                       var top= $(window).scrollTop();
+                         if (top >=235){
+                             $("nav").addClass('secondary');
+                        
+                         }
+                         else
+                             if($("nav").hasClass('secondary')){
+                                      $("nav").removeClass('secondary');
+                                 }
+                             });  
+       
+       </script>
+       
+        <section class="team team1">
+            <div class="container">
+                <div class="row text">
+                    <h1>Our Team</h1>
+                   
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>    Unknown Uknown <br><span>CEO &amp; FOUNDER</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Unknown Uknown<br><span>ACCOUTANCE</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>    Unknown Uknown <br><span>PROGRAM MANAGER</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Unknown Uknown<br><span>COORDINATOR</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                      
+                    
+                </div>
+                
+               
+                
+            </div>
+       </section>
+        <section class="team team2">
+            <div class="container">
+               
+                  <div class="row text">
+                    <h1>BOARD OF DIRECTORS</h1>
+                      
+                   
+          
+                   
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Unknown Uknown <br><span>CHAIRPERSON</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Unknown Uknown <br><span>CEO &amp; CEO</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>    Unknown Uknown <br><span>CEO &amp; CEO</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Unknown Uknown <br><span>CEO &amp; CEO</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                    
+                      
+                    
+                </div>
+                
+               
+                
+            </div>
+       </section>
+        
+        <section class="team team3">
+            <div class="container">
+                <div class="row text">
+                    
+                   
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="imageblock ">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Queens King <br><span>CEO &amp; CEO</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Queens King <br><span>CEO &amp; CEO</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Queens King <br><span>CEO &amp; CEO</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="imageblock">
+                            <img src="{% static 'img/img/l5.jpg' %}" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>     Queens King <br><span>CEO &amp; CEO</span></h3>
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                   
+                    
+                      
+                    
+                </div>
+                
+               
+                
+            </div>
+       </section>
+        
+       
+      <!--Footer-->
+      <footer class="page-footer font-small  pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="" class="navbar navbar-brand"><img src="img/logo1.jpg" class="logo" alt=""></a>MYCN - Mwanza Youth and Children Network </h6>
+                      <p>Mwanza Youth and Children Network (MYCN) is a youth led NGO .The organization was established to serve the youth and children generation living in the Tanzania through different programs and project interventions.</p>
+                  </div>
+                  <!--/.First column-->
+      
+               
+      
+                 
+      
+                  <!--Second column-->
+                  <div class="col-md-8 col-lg-6 col-xl-6 mx-auto mt-6">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                      <p><i class="fa fa-home mr-3"></i> MYCN - Mwanza Youth and Children Network
+                        <br>P.O.BOX 6491
+                        Mwanza, <br>Tanzania, <br> East Africa</p>
+                      <!--<p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>-->
+                      <p><i class="fa fa-phone mr-3"></i> +255 754 016904</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 712 393669</p>    
+                      <p><i class="fa fa-phone mr-3"></i> +255 766 565257</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 784 614665</p>
+                  </div>
+                  <!--/.Fourth column-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-6 ">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Sections</h6>
+                
+         <ul class="nav navbar-nav navbar-right">
+             <li><a href="/">Home</a></li>
+             <li><a href="{% url 'about' %}">About</a></li>
+             <li><a href="{% url 'programs' %}">Programs</a></li>
+             <li><a href="{% url 'team' %}">Team</a></li>
+             
+             <li><a href="{% url 'contact' %}">Contact Us</a></li>
+               <li><a href="{% url 'posts:list' %}">Blog</a></li>
+             <li><a href="{% url 'donate' %}" class="location">DONATE</a></li>
+         </ul>
+     
+                  
+             
+                      
+                  </div>
+              </div>
+              <div class="col-md-12 col-lg-12 ml-lg-0">
+      
+                      <!--Social buttons-->
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  <!--Grid column-->
+                  <div class="col-md-12 col-lg-12">
+      
+                      <!--Copyright-->
+                      <p class="text-center text-md-left grey-text copy">© 2018 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MYCN - Mwanza Youth and 
+Children Network </strong></a></p>
+                      <!--/.Copyright-->
+      
+                  </div><br>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  
+                      <!--/.Social buttons-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+              </div>
+      
+          </div>
+      
+      </footer>
+      <!--/.Footer-->
+                      
+       
+       
+       
+       
+   </body>
+
+</html>

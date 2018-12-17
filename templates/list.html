@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!--<h1 class="text-center">{{title}}</h1>-->
+<br>
+<br>
+<br>
+<div class="col-sm-6 col-sm-offset-3">
+
+{% for obj in object_list %}
+ <div class="row">
+  <div class="col-sm-12 ">
+    <div class="thumbnail">
+    {% if obj.image %}
+    <a href="{{ obj.get_absolute_url }}" >
+    <img src="{{obj.image.url}}" class="img-responsive" alt="...">
+        </a>
+     {% endif %}
+      <div class="caption">
+       {% if obj.draft %}<h3>staff only: Draft</h3>{% endif %}{% if obj.publish > today %}<h3>staff only:Future Post</h3> {% endif %}
+        <h3><a href="{{ obj.get_absolute_url }}" >{{obj.title}}  </a><small>{{obj.publish}}</small></h3>
+         {% if obj.user.get_full_name %}
+        <p>Writter:{{obj.user.get_full_name}}</p>
+        {% endif %}
+        <p>{{obj.content|linebreaks|truncatechars:250}}</p>
+        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">Read</a> </p>
+      </div>
+    </div>
+  </div>
+   </div> 
+   <!--{% cycle "" '<div class="col-sm-12"> <hr></div></div><div class="row">' %}-->
+{% endfor %}
+ 
+ 
+ <div class="pagination">
+    <span class="step-links">
+        {% if object_list.has_previous %}
+            <a href="?page={{ object_list.previous_page_number }}{% if request.GET.q %}&q={{request.GET.q}}{% endif %}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.
+        </span>
+
+        {% if object_list.has_next %}
+            <a href="?page={{ object_list.next_page_number }}{% if request.GET.q %}&q={{request.GET.q}}{% endif %}">next</a>
+        {% endif %}
+    </span>
+</div>    
+  
+  </div> 
+  
+      
+    
+{% endblock %}
+
+
+
+
+
+
+
+

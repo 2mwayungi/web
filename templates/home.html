@@ -1,0 +1,937 @@
+{% load static %}
+ <!--<img src="{% static "my_app/example.jpg" %}" alt="My image"/>-->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>MYCN|Home</title>
+        
+   
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/style.css">
+        
+        <!--new-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+          body{
+            font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+          }
+
+            .head-king{
+                background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("{% static 'img/new/24.jpg' %}");
+                background-size:cover;
+                background-position: top;
+                background-attachment: fixed;
+				overflow:hidden;
+               margin-top: -20px;
+			
+               
+            
+              
+        
+              
+            }
+            .head-king h1{
+                font-size: 49px;
+                left: 10%;
+                font-weight: 300;
+                font-family: sans-serif;
+                line-height: 50px;
+                letter-spacing: 0.05px;
+                color:#fff;
+                margin-top: 269px;
+                margin-bottom: 10px;
+                margin-left: 1px;
+                margin-right: -2px;
+                text-align: -10px;
+            }
+            .head-king h1 span{
+                font-weight: 600;
+            }
+            .head-king p{
+               font-size:20px;
+                color:#fff;
+                line-height: 25px;
+                text-align: justify;
+                margin-bottom: 15px;
+                margin: 25px 0 54px;
+            }
+            .head-king .picture{
+                margin-top: 120px;
+            }
+            .head-king .kichwa a{
+                font-size:14px;
+                margin-top:10px;
+                width:220px;
+                height: 60px;
+                border:2px solid transparent;
+                border-radius: 50px;
+                padding:10px 30px;
+                background-color:#fff;
+                color:saddlebrown;
+                margin-right: 20px;
+            
+                transition: all 0.5s;
+                font-family: tahoma;
+                font-weight: 700;
+                
+                text-transform: uppercase;
+            }
+            .navbar{
+                border-bottom: none;
+                padding:15px 0;
+                transition: all 0.5s ease-in-out;
+            }
+            .head-king div.icon{
+                color:darkblue;
+                font-size:20px;
+                margin-right: 40px;
+                margin-left: 10px;
+                margin-top: 30px;
+            }
+ 
+            .navbar ul li a{
+                color:#fff;
+                background:transparent !important;
+                font-weight: 600;
+                letter-spacing: 1px;
+                font-size: 13px;
+                text-transform: uppercase;
+                transition: all 0.5s ease-in-out;
+                margin-left: 10px;
+            }
+            
+          
+             .navbar ul li a:hover, .navbar ul li a:focus{
+                color:deepskyblue !important;
+                background: none !important;
+                 border-bottom: 2px solid deepskyblue;
+                
+            }
+            .navbar-toggle{
+                border: 1px solid white;
+                color:white;
+                transition: all 0.5s ease-in;
+            }
+            .icon-bar{
+                transition: all 0.5s ease-in-out;
+                color:white;
+                background: white;
+            }
+            .navbar-toggle:hover{
+                color:deepskyblue;
+            }
+          
+            .leo{
+                background-color:transparent;
+            }
+            .location{
+                border:1px solid #fff;
+                padding: 10px 30px;
+                background-color: deepblue;
+            }
+            .navbar-inverse .navbar-collapse{
+                background: transparent !important;
+            }
+           .navbar-inverse{
+            background-color: transparent !important;
+        }
+            .navbar-header .navbar-brand{
+                color:#fff;
+                font-weight: bold;
+            }
+            .navbar-header .navbar-brand:hover{
+                color:#564;
+            }
+            @keyframes ani-mouse{
+                0%{
+                    opacity:1;
+                    top:29%;
+                }
+                15%{
+                    opacity:1;
+                    top:50%;
+                }
+                50%{
+                    opacity:0;
+                    top:50%;
+                }
+                100%{
+                    opacity:0;
+                    top:50%;
+                }
+            }
+           
+           .head-king .scroll-btn > *:hover,
+           .head-king .scroll-btn > *:focus,
+           .head-king .scroll-btn > *:active,
+           .head-king .scroll-btn > *.active{
+                opacity:0.8;
+                filter:alpha(opacity=80)
+            }
+           .head-king .scroll-btn .mouse{
+                position:relative;
+                display:block;
+                width:35px;
+                height:55px;
+                margin:0 auto 20px;
+                box-sizing:border-box;
+                border:3px solid white;
+                border-radius:23px;
+            }
+.what-we p{
+    padding-top: 15px;
+}
+             .what-we .btn{
+
+              background: blue;
+            background: linear-gradient(to right bottom, #C5CAE9, #3333FF);
+            color:#fff;
+                 color: 
+                 letter-spacing: 1px;
+            display:inline-block;
+                 color:mediumblue
+
+            overflow: hidden;
+            height: 40px;
+            width:150px;
+      
+            text-align: center !important;
+
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 17px;
+            text-transform: uppercase;
+            margin-top: 25px;
+                  margin-bottom: 35px;
+            text-decoration: none;
+            
+
+
+
+            }
+           .head-king .scroll-btn .mouse > *{
+                position:absolute;
+                display:block;
+                top:29%;
+                left:50%;
+                width:8px;
+                height:8px;
+                margin: -4px 0 0 -4px;
+                background: white;
+                border-radius:50%;
+                animation:ani-mouse 2.5s linear infinite;
+            }
+            .scroll-btn .mimi{
+                text-align:center;
+            }
+            .news h1{
+                color:#2580be;
+                 text-align:center;
+                font-size:48px;
+                font-weight: 300;
+                margin-top:-5px;
+            }
+               .news h1:after{
+                content:'';
+                width:100px;
+                height: 4px;
+                display: block;
+                margin-top: 6px !important;
+                background-color:#2580be;
+                margin: 0 auto;
+                   margin-bottom: 30px;
+                
+            }
+            .secondary{
+                color:#fff;
+                background-color: rgba(0,0,0,0.5);
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: all 0.5s ease-in;
+                
+                
+                
+                
+                
+            }
+            .navbar-brand img{
+                height: 70px;
+                margin-top: -25px;
+                 
+            }
+            .one{
+            color:blue;
+            }
+            .tw0{
+            color:"red";
+            }
+            .three{
+            color:green;
+            }
+            .what-we h2{
+                text-align:center;
+                font-size:48px;
+                font-weight: 300;
+                color:#2580be;
+               
+                  text-decoration: none !important;
+            }
+            .what-we{
+                overflow: hidden;
+                text-decoration: none;
+            }
+            .what-we p{
+                text-align: center;
+                font-size:24px;
+                margin: 0 150px;
+                font-weight: 300;
+            }
+.what-we .col-1-3:hover h2{
+    transform: scaleX(1.05);
+  
+    
+}
+           .what-we img{
+                max-width: 100%;
+               transition: 2s;
+               overflow: hidden;
+             
+            }
+.what-we .col-1-3:hover img{
+    transform: scaleX(1.05);
+}
+          
+            .container,
+            .grid {
+              margin: 0 auto;
+           
+             
+            }
+            .container {
+              padding-left: 10px;
+              padding-right: 10px;
+               
+            }
+            .grid,
+            .col-1-3,
+            .col-2-3 {
+              padding-left: 25px;
+              padding-right: 10px;
+            }
+            .col-1-3,
+            .col-2-3  {
+              display: inline-block;
+              vertical-align: top;
+            }
+            .col-1-3 {
+              width: 33.33%;
+              margin-left:-12px;
+                margin-bottom: 15px;
+            
+            }
+            .col-2-3 {
+              width: 66.66%;
+            }
+
+            .col-1-3 h3{
+                text-align: center;
+                  background-color: aliceblue;
+            }
+            .col-1-3 p{
+                text-align:justify;
+                background-color: aliceblue;
+                margin-bottom: 20px;
+            }
+            .what-we p {
+            text-align: center;
+            font-size: 18px;
+            margin: 0 1px;
+            }
+            .what-we .container p {
+                text-align: center;
+            font-size: 18px;
+            margin: 0 150px;
+                margin-bottom: 20px;
+            }
+            h5{
+                margin-top: 60px;
+                text-align: center;
+                font-size: 23px;
+            }
+            .partners h3{
+                text-align: center;
+                margin-top:70px;
+            }
+            .partners p{
+                text-align: center;
+            }
+            .inner-content{
+                max-width: 100%;
+              
+            }
+            .partners img{
+                max-width: 100%;
+            }
+            .partners{
+                /*background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(img/aa.jpg);*/
+                background-color: aliceblue;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                padding-bottom: 75px;
+            }
+            .partners h3{
+                font-size:36px;
+                color:#2580be;
+                padding-bottom: 35px;
+                font-family: sans-serif;
+                margin-top: 60px;
+                font-weight: 300;
+                margin-bottom: 30px;
+            }
+            .partners img{
+              width: auto;  
+            }
+            .partners p{
+                color:#fff;
+                font-size:20px;
+                font-family;
+                margin-top: 30px;
+                margin-bottom: 40px;
+                font-weight: 300;
+            }
+        
+            .what-we .container{
+               
+            
+            }
+            .page-footer{
+                padding-top:10px;
+               
+                padding-bottom: 50px;
+                background: rgba(0,0,0,0.7);
+            }
+            .font-weight-bold{
+                margin-top:50px;
+            }
+            .ml-lg-0{
+                padding-top: 50px;
+            }
+            .col-md-12 .btn-floating{
+                padding-top: 70px;
+                font-size:35px;
+            }
+            .copy{
+                text-align: left;
+            }
+            footer p{
+                font-size:14px;
+                color:#fff;
+            }
+            footer p a{
+                font-size:14px;
+                color:#fff;
+                text-decoration: none;
+            }
+            footer p a:hover{
+                color:#fff;
+                text-decoration: none;
+            }
+            footer h6{
+                font-size: 18px;
+                color:#fff;
+                padding-bottom: 20px;
+            }
+            footer .logo{
+                position: left;
+            }
+.focus{
+             margin-top:50px;
+            color:#fff;
+            text-align: center;
+            text-align: center;
+            left:70px;
+            
+            background: linear-gradient(to right, #31bfce 0%, #2580be 100%);
+            background-position:center;
+            background-size: cover;
+            background-attachment: fixed;
+            padding:60px;
+            
+            
+        }
+      
+        .focus .col-md-4 p{
+            margin-bottom: 15px;
+        }
+        .focus .focus-text h3{
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            margin-top: -55px;
+            padding-bottom: 6px;
+            
+        }
+        .focus .focus-text p{
+            padding-bottom: 10px;
+        }
+        
+    
+        <!---TEAM-->
+            
+            .container .text{
+    
+    bottom: -120px;
+    left: 0;
+ 
+    position: absolute;
+    background: rgba(0,0,0,0.9);
+    width:100%;
+   
+    box-sizing: border-box;
+    transition: .5s;
+}
+.container .text .fa.fa-instagram {
+     font-size: 19px; 
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+       font-size: 25px; 
+    letter-spacing: 3px;
+    transition: .5s;
+}
+            .container .text .fa.fa-linkedin-square{
+                 color: #007bb6;
+            } 
+            .container .text .fa.fa-facebook-square{
+               color: #3b5998;
+            } 
+            .container .text .fa.fa-twitter-square {
+             color: #00aced;
+            } 
+            .container .text .fa.fa-google-plus-square{
+                color:#dd4b39;
+            } 
+            .container .text .fa.fa-youtube{
+                color:#dd4b39;
+            }
+            
+            
+            
+            
+            
+           .container  .text ul{
+               
+    list-style: none;
+     display: flex;
+ 
+    
+}
+.container .row  .text ul li a{
+    float:left;
+   
+
+    color:#fff;
+ 
+    
+}
+.container  .text ul li a .fa{
+    color:#fff;
+    transition: 5s;
+    margin: 7px;
+    font-size: 25px;
+            }
+.container  .text ul li a:hover .fa{
+    transform: rotateY(360deg);
+    color:white;
+}
+            .container  .text ul li a:hover .fa.fa-linkedin{
+                color:#517fa4;
+            }
+        .container  .text ul li a:hover .fa.fa-instagram{
+    transform: rotateY(360deg);
+    color:white;
+}
+  
+            h2:after{
+                content:'';
+                width:100px;
+                height: 4px;
+                display: block;
+                margin-top: 10px !important;
+                background-color:#2580be;
+                margin: 0 auto;
+                
+            }
+            .focus-text h3:after{
+                content:'';
+                width:100px;
+                height: 4px;
+                display: block;
+                margin-top: 5px !important;
+                background-color: White;
+                margin: 0 auto;
+                top:10%;
+            }
+            .partners h3:after{
+                content:"";
+                width: 100px;
+                  margin-top: 10px !important;
+                height: 4px;
+                margin: 0 auto;
+                margin-top:15px;
+                background-color:#2580be;
+                display: block;
+            }
+            
+            
+        </style>
+        
+            </head>
+ 
+   <body>
+    <nav class="navbar navbar-fixed-top">
+         <div class="container">
+            <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-target="#navi" data-toggle="collapse">
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             <a href="" class="navbar navbar-brand"><img src="{% static 'img/img/mycn.png' %}" class="logo" alt=""></a>
+         </div>
+         <div class="collapse navbar-collapse" id="navi">
+         <ul class="nav navbar-nav navbar-right">
+             <li><a href="/">Home</a></li>
+             <li><a href="{% url 'about' %}">About</a></li>
+             <li><a href="{% url 'programs' %}">Programs</a></li>
+             <li><a href="{% url 'team' %}">Team</a></li>
+             
+             <li><a href="{% url 'contact' %}">Contact Us</a></li>
+               <li><a href="{% url 'posts:list' %}">Blog</a></li>
+             <li><a href="{% url 'donate' %}" class="location">DONATE</a></li>
+         </ul>
+         </div>
+         </div>
+          
+      </nav> 
+    <section id="head-title" class="head-king">
+       <div class="container">
+           <div class="row">
+               <div class="col-sm-12 kichwa">
+               
+
+                <h1><span class="for">MYCN- <br>Mwanza Youth and <br> Children Network</span> <br><br><span class="one">HOPE!</span> <span class="two">ACTION! </span>  <span class="three">CHANGE!</span></h1>
+                <!--<a href="" class="btn btn-full">Show me more</a>
+                <a href="" class="btn btn-half">I'm hungry</a>-->
+               
+                   
+               </div>
+             
+           </div>
+     <div class="text ">
+                            
+                            <ul>
+                             <li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+                             <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                             <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+                             <li><a href=""><i class="fa fa-google-plus-square"></i></a></li>
+                             <li><a href=""><i class="fa fa-twitter-square "></i></a></li>
+                             <li><a href=""><i class="fa fa-youtube"></i><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script></a></li>
+                            </ul>
+                        </div>
+       </div>
+       <span class="scroll-btn">
+           <a href="#mission" >
+               <span class="mouse">
+                   <span></span>
+               </span>
+           </a>
+           <p class="mimi" id='mission' >Scroll<!-- Me--></p>
+           
+       </span>
+           
+        
+    </section>  
+	
+      
+      <script>
+       $(window).scroll(function(){
+                       var top= $(window).scrollTop();
+                         if (top >=235){
+                             $("nav").addClass('secondary');
+                        
+                         }
+                         else
+                             if($("nav").hasClass('secondary')){
+                                      $("nav").removeClass('secondary');
+                                 }
+                             });  
+       
+       </script>
+       <section  class="what-we">
+        <div class="section-content">
+            <div  class="container">
+     
+                <h2 >Our Mission</h2>
+                <p>Mission: To assist and facilitate youth and children so they have the best means to participate and develop their intellectual, physical, moral, cultural and economic capacity for their benefit and society in general.
+                <a id='mission' href="{% url 'about' %}" class="btn">Learn More</a>
+                </p>
+              
+               
+               </div>
+               <section class="news">
+                   <h1  class="text-center">News </h1>
+               </section>
+               <section class="row">
+      <div class="grid">
+
+       {% for obj in post %}
+
+        <section class="teaser col-1-3">
+          <!--<h5>News</h5>-->
+         
+            {% if obj.image %}
+            <a href="{{obj.get_absolute_url }}">
+     <img src="{{obj.image.url}}" class="img-responsive" alt="">
+            </a>
+     {% endif %}
+     
+          <h3><a href="{{obj.get_absolute_url }}">{{obj.title}} <br> <small>{{obj.publish}}</small><br></a></h3>
+     
+        <p>{{obj.text|linebreaks|truncatechars:200}}</p>
+      
+        </section>
+        {% endfor %}
+        
+    
+        
+        
+
+
+      </div>
+      
+    </section>
+
+           </div>
+         
+      
+    </section>
+      <section class="focus">
+               
+                   
+                      
+                            <div class="focus-text">
+                                            <h3 class="text-center">Our focus areas: </h3>
+            <p class="text-center lead">Since the youth and children generation has numerous challenges, more than any other group, MYCN focuses on the following focus areas;</p>
+            <div class="row">
+             
+             
+             
+               <div class="col-md-4 col-sm-4">
+                <i class="fa fa-child fa-4x"></i><br><br>
+                <p>Youth and Children rights and policies</p>
+                 
+             </div>
+             <div class="col-md-4 col-sm-4">
+                <i class="fa fa-book fa-4x"></i><br><br>
+                <p>Education support</p>
+                 
+             </div>
+             <div class="col-md-4 col-sm-4">
+                <i class="fa fa-line-chart fa-4x"></i><br><br>
+                <p>Economic empowerment</p>
+             </div>
+             <div class="row">
+                <div class="col-md-4 col-sm-4">
+                <i class="fa fa-desktop fa-4x"></i><br><br>
+                <p>Science and Technology</p>
+             </div>
+             <div class="col-md-4 col-sm-4">
+                <i class="fas fa-ribbon fa-5x"></i>
+                <p>HIV/AIDS and Drug abuse</p>
+             </div>
+             <div class="col-md-4 col-sm-4">
+                <i class="fa fa-user-md fa-4x"></i><br><br>
+                <p>Reproductive health</p>
+             </div>
+                </div>
+             <div class="row">
+                 
+             
+             
+             <div class="col-md-4 col-sm-4">
+                <i class="fa fa-futbol-o fa-4x"></i><br><br>
+                <p>Sports and culture</p>
+             </div>
+             <div class="col-md-4 col-sm-4">
+                <i class="fas fa-hand-paper fa-5x"></i><br><br>
+                <p>Corruption</p>
+             </div>
+             <div class="col-md-4 col-sm-4">
+                <i class="far fa-money-bill-alt fa-5x"></i><br><br>
+                <p>Millennium Development Goals (MDGs) and strategies for poverty eradication.</p>
+                 
+             </div>
+        
+                 </div>
+                
+           
+                           </div>
+                            </div>  
+              
+            </section>
+           
+
+      <section class="partners">
+          <div class="container">
+              <h3 class="text-center">OUR PARTNERS</h3>
+             <!-- <P class="text-center">Thank you for involved into our projects</P>-->
+              <div class="row">
+                  <div class="col-md-3 col-sm-3">
+                      <img src="{% static 'img/img/u.jpg' %}" alt="">
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                     <img src="{% static 'img/img/yy.jpg' %}" alt="">
+                      
+                  </div>
+                  <div class="col-md-3 col-sm-3"><img src="{% static 'img/img/x.jpg' %}" alt=""></div>
+                  <div class="col-md-3 col-sm-3"><img src="{% static 'img/img/y.jpeg' %}" alt=""></div>
+              </div>
+              <br>
+              <div class="row">
+                  <div class="col-md-3 col-sm-3">
+                      <img src="{% static 'img/img/uu.jpg' %}" alt="">
+                  </div>
+                  <div class="col-md-3 col-sm-3">
+                     <img src="{% static 'img/img/z.png' %}" alt="">
+                      
+                  </div>
+                  <div class="col-md-3 col-sm-3"><img src="{% static 'img/img/zz.png' %}" alt=""></div>
+                  <div class="col-md-3 col-sm-3"><img src="{% static 'img/img/ilo2.jpg' %}" alt=""></div>
+              </div>
+          </div>
+      </section>
+      
+      <!--Footer-->
+      <footer class="page-footer font-small  pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+      
+              <!-- Footer links -->
+              <div class="row text-center text-md-left mt-3 pb-3">
+      
+                  <!--First column-->
+                  <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold"> <a href="" class="navbar navbar-brand"><img src="img/logo1.jpg" class="logo" alt=""></a>MYCN - Mwanza Youth and Children Network </h6>
+                      <p>Mwanza Youth and Children Network (MYCN) is a youth led NGO .The organization was established to serve the youth and children generation living in the Tanzania through different programs and project interventions.</p>
+                  </div>
+                  <!--/.First column-->
+      
+               
+      
+                  <!--Second column-->
+                  
+                  
+      
+                  <!--Third column-->
+   
+                  <!--/.Third column-->
+      
+                
+      
+                  <!--Fourth column-->
+                  <div class="col-md-8 col-lg-6 col-xl-6 mx-auto mt-6">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                      <p><i class="fa fa-home mr-3"></i> MYCN - Mwanza Youth and Children Network
+                        <br>P.O.BOX 6491
+                        Mwanza, <br>Tanzania, <br> East Africa</p>
+                      <!--<p><i class="fa fa-envelope mr-3"></i> info@gmail.com</p>-->
+                      <p><i class="fa fa-phone mr-3"></i> +255 754 016904</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 712 393669</p>    
+                      <p><i class="fa fa-phone mr-3"></i> +255 766 565257</p>
+                      <p><i class="fa fa-phone mr-3"></i> +255 784 614665</p>
+                  </div>
+                  <!--/.Fourth column-->
+                  <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-6 ">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">Sections</h6>
+                
+         <ul class="nav navbar-nav navbar-right">
+             <li><a href="/">Home</a></li>
+             <li><a href="{% url 'about' %}">About</a></li>
+             <li><a href="{% url 'programs' %}">Programs</a></li>
+             <li><a href="{% url 'team' %}">Team</a></li>
+             
+             <li><a href="{% url 'contact' %}">Contact Us</a></li>
+               <li><a href="{% url 'posts:list' %}">Blog</a></li>
+             <li><a href="{% url 'donate' %}" class="location">DONATE</a></li>
+         </ul>
+     
+                  
+             
+                      
+                  </div>
+                  <!--/.Second column-->
+      
+      
+              </div>
+              <div class="col-md-12 col-lg-12 ml-lg-0">
+      
+                      <!--Social buttons-->
+                      <div class="text-center text-md-right">
+                          <ul class="list-unstyled list-inline">
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-google-plus"></i></a></li>
+                              <li class="list-inline-item"><a class="btn-floating btn-sm rgba-white-slight mx-1"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                      </div>
+              <!-- Footer links -->
+      
+              <hr>
+      
+              <div class="row py-3 d-flex align-items-center">
+      
+                  <!--Grid column-->
+                  <div class="col-md-12 col-lg-12">
+      
+                      <!--Copyright-->
+                      <p class="text-center text-md-left grey-text copy">© 2018 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"><strong> MYCN - Mwanza Youth and 
+Children Network </strong></a></p>
+                      <!--/.Copyright-->
+      
+                  </div><br>
+                  <!--Grid column-->
+      
+                  <!--Grid column-->
+                  
+                      <!--/.Social buttons-->
+      
+                  </div>
+                  <!--Grid column-->
+      
+              </div>
+      
+          </div>
+      
+      </footer>
+      <!--/.Footer-->
+                      
+       
+       
+       
+       
+   </body>
+
+</html>
